@@ -10,31 +10,31 @@ export const metadata: Metadata = {
   keywords: ['Coloreto', 'contraste de color', 'accesibilidad', 'herramienta de diseño', 'WCAG'],
   authors: [{ name: 'Qosmo', url: 'https://instagram.com/qosmo__' }],
   creator: 'Qosmo',
-  // openGraph: {
-  //   title: 'Coloreto - Herramienta de Contraste de Color Accesible',
-  //   description:
-  //     'Verifica fácilmente el contraste entre colores y asegura la accesibilidad en tus diseños con Coloreto.',
-  //   url: 'https://coloreto.com',
-  //   siteName: 'Coloreto',
-  //   images: [
-  //     {
-  //       url: 'https://coloreto.com/og-image.png',
-  //       width: 1200,
-  //       height: 630,
-  //       alt: 'Coloreto - Herramienta de Contraste de Color Accesible',
-  //     },
-  //   ],
-  //   locale: 'es_ES',
-  //   type: 'website',
-  // },
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: 'Coloreto - Herramienta de Contraste de Color Accesible',
-  //   description:
-  //     'Verifica fácilmente el contraste entre colores y asegura la accesibilidad en tus diseños con Coloreto.',
-  //   images: ['https://coloreto.com/og-image.png'],
-  //   creator: '@tu_usuario_de_twitter',
-  // },
+  openGraph: {
+    title: 'Coloreto - Herramienta de Contraste de Color Accesible',
+    description:
+      'Verifica fácilmente el contraste entre colores y asegura la accesibilidad en tus diseños con Coloreto.',
+    url: 'https://coloreto.com',
+    siteName: 'Coloreto',
+    images: [
+      {
+        url: 'https://coloreto.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Coloreto - Herramienta de Contraste de Color Accesible',
+      },
+    ],
+    locale: 'es_ES',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Coloreto - Herramienta de Contraste de Color Accesible',
+    description:
+      'Verifica fácilmente el contraste entre colores y asegura la accesibilidad en tus diseños con Coloreto.',
+    images: ['https://coloreto.com/opengraph-image.png'],
+    creator: '@qosmo_',
+  },
   robots: {
     index: true,
     follow: true,

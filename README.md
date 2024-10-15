@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Coloreto
 
-## Getting Started
+**Coloreto** es una herramienta sencilla y profesional que te ayuda a verificar el contraste entre colores para asegurar la accesibilidad en tus diseños, de acuerdo con los estándares WCAG. Con esta aplicación, puedes comprobar fácilmente el ratio de contraste entre dos colores y obtener información sobre si es accesible o no.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Verifica el ratio de contraste entre dos colores (texto y fondo).
+- Evalúa si el contraste es accesible según los estándares WCAG (AAA, AA, etc.).
+- Interfaz minimalista, con transiciones suaves y diseño moderno.
+- Funcionalidad de copiar el código hexadecimal del color al portapapeles.
+- Información adicional accesible a través de un modal elegante.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React** con **Next.js** para la creación de la aplicación.
+- **Tailwind CSS** para el estilo responsivo y las transiciones.
+- **JavaScript** para la lógica de verificación de contraste.
+- **Figma** para el diseño y prototipado.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Uso
 
-## Learn More
+1. Selecciona dos colores (color de texto y color de fondo) para verificar el contraste entre ellos.
+2. La herramienta calculará automáticamente el ratio de contraste y te indicará si es accesible según los estándares de WCAG.
+3. Puedes copiar el color en formato hexadecimal al portapapeles con un solo clic.
+4. Accede a información adicional sobre el contraste y la herramienta haciendo clic en el botón "About" en la esquina superior derecha.
 
-To learn more about Next.js, take a look at the following resources:
+## Enlaces Útiles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Más información sobre el [Contrast Ratio en Wikipedia](https://en.wikipedia.org/wiki/Contrast_ratio).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Desarrollador
 
-## Deploy on Vercel
+Este proyecto fue desarrollado por [Qosmo](https://instagram.com/qosmo__), un apasionado por el desarrollo de aplicaciones web y el diseño accesible.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Si tienes alguna pregunta o sugerencia, ¡no dudes en contactarme!
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+¡Gracias por usar **Coloreto**! Si te gustó el proyecto, no olvides darle una estrella ⭐ en GitHub.
