@@ -4,7 +4,7 @@
 
 import { useState } from 'react';
 
-export default function ColorInput({ label, color, setColor }) {
+export default function ColorInput({ label, color, setColor, lockColor, toggleLock, randomize }) {
     const [copySuccess, setCopySuccess] = useState('');
 
     const copyToClipboard = () => {
@@ -19,7 +19,7 @@ export default function ColorInput({ label, color, setColor }) {
     return (
         <div className="flex flex-col w-full md:w-60">
             <label className="mb-[10px] text-[#A0AEB5] text-left">{label}</label>
-            <div className="bg-[#F2F2F2] flex items-center gap-5 px-3 py-2 rounded-[10px]">
+            <div className="bg-[#F2F2F2] flex items-center gap-2 px-3 py-2 rounded-[10px]">
                 <div className="flex-1 flex gap-5 items-center">
                     {/*Label Circle pick color */}
                     <label
@@ -40,6 +40,26 @@ export default function ColorInput({ label, color, setColor }) {
                         maxLength={7}
                     />
                 </div>
+
+                {/* Botón para suffle */}
+                {/* <button
+                    className="size-[32px] hover:scale-105 transition-all duration-200"
+                    onClick={randomize}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-arrows-shuffle" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" stroke="none" /><path d="m18 4 3 3-3 3M18 20l3-3-3-3" /><path d="M3 7h3a5 5 0 0 1 5 5 5 5 0 0 0 5 5h5M21 7h-5a4.978 4.978 0 0 0-3 1m-4 8a4.984 4.984 0 0 1-3 1H3" /></svg>
+                </button> */}
+
+                {/* Botón para lock color */}
+                <button
+                    className="size-[32px] hover:scale-105 transition-all duration-200"
+                    onClick={toggleLock}
+                >
+                    {lockColor ? (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" stroke="none" /><path d="M5 13a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6z" /><path d="M11 16a1 1 0 1 0 2 0 1 1 0 0 0-2 0M8 11V7a4 4 0 1 1 8 0v4" /></svg>
+                    ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" stroke="none" /><path d="M5 13a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z" /><path d="M11 16a1 1 0 1 0 2 0 1 1 0 1 0-2 0M8 11V6a4 4 0 0 1 8 0" /></svg>
+                    )}
+                </button>
 
                 {/* Botón para copiar al portapapeles */}
                 <button

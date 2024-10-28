@@ -10,9 +10,13 @@ export default function Home() {
         Coloreto
       </h1>
 
-      <About/>
+      <About />
 
       <ContrastChecker />
+
+      <footer className='text-gray-600 text-xs'>
+        v 1.0.0
+      </footer>
     </div>
   );
 }

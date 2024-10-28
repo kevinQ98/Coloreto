@@ -27,7 +27,7 @@ export default function AboutModal() {
                     <div className="bg-[#1C1C1C] text-white p-6 rounded-lg max-w-xs sm:max-w-sm w-full shadow-xl transform transition-transform duration-300 scale-100">
                         <h2 className="text-2xl font-bold mb-4 text-[#ECE6E6]">Acerca de Coloreto</h2>
                         <p className="text-[#A0AEC0] mb-4 text-sm leading-relaxed">
-                            Coloreto es una herramienta para ayudarte a verificar el contraste entre colores, asegurando la accesibilidad en tus diseños de acuerdo con los estándares de WCAG.
+                            Coloreto es una herramienta para ayudarte a verificar el contraste entre colores, asegurando la accesibilidad en tus diseños de acuerdo con los estándares de <a href='https://www.w3.org/WAI/standards-guidelines/wcag/es' className='text-[#60A5FA] underline' target='_blank' rel='noopener noreferrer'>WCAG</a>.
                         </p>
                         <p className="text-[#A0AEC0] mb-4 text-sm leading-relaxed">
                             El <strong>contrast ratio (CR)</strong> mide la relación entre la luminancia del color más brillante y el más oscuro en una pantalla. Un mayor ratio de contraste mejora la visibilidad y es crucial para el diseño accesible.
