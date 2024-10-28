@@ -46,12 +46,12 @@ export default function ContrastChecker() {
     };
 
     // Función para cambiar a un color aleatorio
-    const randomizeColor = (setColor, locked) => {
-        if (!locked) {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)].value;
-            setColor(randomColor);
-        }
-    };
+    // const randomizeColor = (setColor, locked) => {
+    //     if (!locked) {
+    //         const randomColor = colors[Math.floor(Math.random() * colors.length)].value;
+    //         setColor(randomColor);
+    //     }
+    // };
 
     // Función para obtener un color aleatorio
     const getRandomColor = () => {
@@ -90,7 +90,7 @@ export default function ContrastChecker() {
                     borderColor="#4ADE80"
                     lockColor={textLocked}
                     toggleLock={() => setTextLocked(!textLocked)} // Agregar la funcionalidad de bloquear
-                    randomize={() => randomizeColor(setTextColor, textLocked)} // Funcionalidad aleatoria
+                    // randomize={() => randomizeColor(setTextColor, textLocked)} // Funcionalidad aleatoria
                 />
 
                 {/* Botón para intercambiar colores */}
@@ -105,7 +105,7 @@ export default function ContrastChecker() {
                     borderColor="#60A5FA"
                     lockColor={bgLocked}
                     toggleLock={() => setBgLocked(!bgLocked)} // Bloquear fondo
-                    randomize={() => randomizeColor(setBgColor, bgLocked)} // Aleatorio
+                    // randomize={() => randomizeColor(setBgColor, bgLocked)} // Aleatorio
                 />
             </div>
 

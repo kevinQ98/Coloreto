@@ -4,7 +4,7 @@
 
 import { useState } from 'react';
 
-export default function ColorInput({ label, color, setColor, lockColor, toggleLock, randomize }) {
+export default function ColorInput({ label, color, setColor, lockColor, toggleLock }) {
     const [copySuccess, setCopySuccess] = useState('');
 
     const copyToClipboard = () => {
